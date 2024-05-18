@@ -19,9 +19,13 @@ URL="https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&type=all"
 
 REPOS=""
 while [ "$URL" ]; do
-  # get response
-#  RESP=$(curl -i -Ss -H "Authorization: token ${GITHUB_AUTH_TOKEN}" "${URL}")
-  RESP=$(curl -i -Ss "${URL}") # uncomment to test rate limiting
+  if [ -z $GITHUB_AUTH_TOKEN ]; then
+    # no auth token - will probably hit rate limit (only 60 tries per hour(?))
+    RESP=$(curl -i -Ss "${URL}")
+  else
+    # auth token
+    RESP=$(curl -i -Ss -H "Authorization: token ${GITHUB_AUTH_TOKEN}" "${URL}")
+  fi
 
   # seperate out headers
   HEADERS=$(echo "${RESP}" | sed '/^\r$/q')
