@@ -4,9 +4,9 @@ Scripts using [GitHub's `repos` API][repo api] to grab random repositories from 
 
 The SVG is particularly fun as you can put the link on a GitHub readme, or a personal website, and every visitor will see a different random image. This is harder to do with the raw text without sending your own requests with JavaScript.
 
-| Text | SVG |
-| --- | --- |
-| https://server.alifeee.co.uk/github/random.cgi | https://server.alifeee.co.uk/github/svg.cgi <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.co.uk/github/svg.cgi) |
+| Text | SVG | HTML |
+| --- | --- | --- |
+| <https://server.alifeee.co.uk/github/random.cgi> | <https://server.alifeee.co.uk/github/svg.cgi> <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.co.uk/github/svg.cgi) | <https://server.alifeee.co.uk/github/html.cgi> |
 
 ```bash
 $ curl https://server.alifeee.co.uk/github/random.cgi
