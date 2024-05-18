@@ -102,3 +102,11 @@ Try with CURL and also in your browser.
 curl https://server.alifeee.co.uk/github/random.cgi
 curl https://server.alifeee.co.uk/github/svg.cgi
 ```
+
+## GitHub readme notes
+
+GitHub uses camo to cache images in readme files. Thus, the image will be cached for (unknown time).
+
+You can manually refresh the cache via the following advice, and also read more about camo here:
+
+<https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-anonymized-urls#removing-an-image-from-camos-cache>
