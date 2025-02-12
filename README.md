@@ -6,7 +6,7 @@ The SVG is particularly fun as you can put the link on a GitHub readme, or a per
 
 | Text | SVG | HTML |
 | --- | --- | --- |
-| <https://server.alifeee.net/github/random.cgi> | <https://server.alifeee.co.uk/github/svg.cgi> <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.co.uk/github/svg.cgi) | <https://server.alifeee.co.uk/github/html.cgi> |
+| <https://server.alifeee.net/github/random.cgi> | <https://server.alifeee.net/github/svg.cgi> <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.net/github/svg.cgi) | <https://server.alifeee.net/github/html.cgi> |
 
 ```bash
 $ curl https://server.alifeee.net/github/random.cgi
