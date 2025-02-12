@@ -6,13 +6,13 @@ The SVG is particularly fun as you can put the link on a GitHub readme, or a per
 
 | Text | SVG | HTML |
 | --- | --- | --- |
-| <https://server.alifeee.co.uk/github/random.cgi> | <https://server.alifeee.co.uk/github/svg.cgi> <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.co.uk/github/svg.cgi) | <https://server.alifeee.co.uk/github/html.cgi> |
+| <https://server.alifeee.net/github/random.cgi> | <https://server.alifeee.co.uk/github/svg.cgi> <br> ![an SVG image showing a random one of alifeee's GitHub repositories](https://server.alifeee.co.uk/github/svg.cgi) | <https://server.alifeee.co.uk/github/html.cgi> |
 
 ```bash
-$ curl https://server.alifeee.co.uk/github/random.cgi
+$ curl https://server.alifeee.net/github/random.cgi
 https://github.com/alifeee/mountain-bothies
 
-$ curl https://server.alifeee.co.uk/github/svg.cgi
+$ curl https://server.alifeee.net/github/svg.cgi
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="400px" height="20px" viewbox="0 0 400 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 <text xml:space="preserve" style="font-size:18px;font-family:sans-serif;stroke-width:0.25;fill:red" x="0" y="15"
@@ -74,7 +74,7 @@ sudo nano /etc/nginx/nginx.conf
 
 ```nginx
 server {
-  server_name server.alifeee.co.uk;
+  server_name server.alifeee.net;
 
   listen 80 default_server;
   listen [::]:80 default_server;
@@ -99,8 +99,8 @@ sudo systemctl restart nginx.service
 Try with CURL and also in your browser.
 
 ```bash
-curl https://server.alifeee.co.uk/github/random.cgi
-curl https://server.alifeee.co.uk/github/svg.cgi
+curl https://server.alifeee.net/github/random.cgi
+curl https://server.alifeee.net/github/svg.cgi
 ```
 
 ## GitHub readme notes
