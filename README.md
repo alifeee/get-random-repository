@@ -1,3 +1,5 @@
+> [!CAUTION]
+> MOVED! see <https://git.alifeee.net/get-random-repository/about/>
 # Get Random Repository
 
 Scripts using [GitHub's `repos` API][repo api] to grab random repositories from a user's GitHub. You can run them standalone, or you can set up CGI to use them on a server.
